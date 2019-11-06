@@ -3,6 +3,8 @@ from instapy import smart_run
 
 from dotenv import load_dotenv
 
+from datetime import date
+
 import random
 import os
 
@@ -53,4 +55,14 @@ with smart_run(session):
     )
     session.set_do_comment(enabled=True,  percentage=50)
     session.set_comments(comments)
-    session.like_by_tags(hashtags, amount=50)
+    session.like_by_tags(hashtags, amount=25)
+    session.follow_user_followers(
+        ['ride_list'],
+        amount=10,
+        randomize=False,
+        sleep_delay=60,
+    )
+
+
+with open("runs.log", "a") as f:
+    f.write("Ran on {}".format(date.today()))
