@@ -27,6 +27,7 @@ session = InstaPy(
     username=username,
     password=password,
     headless_browser=True
+    #headless_browser=False
 )
 
 with smart_run(session):
@@ -55,7 +56,8 @@ with smart_run(session):
     )
     session.set_do_comment(enabled=True,  percentage=50)
     session.set_comments(comments)
-    session.like_by_tags(hashtags, amount=25)
+    # session.like_by_tags(hashtags, amount=20)
+
     session.follow_user_followers(
         ['ride_list'],
         amount=10,
