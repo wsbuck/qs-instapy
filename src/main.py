@@ -26,7 +26,8 @@ hashtags = [
 session = InstaPy(
     username=username,
     password=password,
-    headless_browser=True
+    headless_browser=False,
+    want_check_browser=False
     #headless_browser=False
 )
 
