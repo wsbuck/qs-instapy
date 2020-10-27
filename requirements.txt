@@ -4,7 +4,7 @@ cffi==1.13.2
 chardet==3.0.4
 clarifai==2.6.2
 configparser==4.0.2
-cryptography==2.8
+cryptography==3.2
 EasyProcess==0.2.7
 emoji==0.5.4
 future==0.18.2
