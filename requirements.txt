@@ -20,7 +20,7 @@ pycparser==2.19
 python-dotenv==0.10.3
 python-telegram-bot==12.2.0
 PyVirtualDisplay==0.2.4
-PyYAML==5.1.2
+PyYAML==5.4
 regex==2019.11.1
 requests==2.22.0
 selenium==3.141.0
